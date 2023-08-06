@@ -23,7 +23,7 @@ services:
     volumes:
       - static:/staticfiles/
   gateway:
-    build: ./nginx/
+    build: ./gateway/
     env_file: .env
     volumes:
       - static:/staticfiles
